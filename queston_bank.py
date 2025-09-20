@@ -13,13 +13,11 @@ class QA:
     answer: str
     answer_type: str = "single"
     gemeni_comment: str = ""
-    link_pic: str = ""  # Add the new attribute here
+    link_pic: str = ""
 
 
 class QuestionBank:
-    current_script_path = os.path.abspath(__file__)
-    # start_path = "C:/Users/darrenl/OneDrive - Goldenberg Hehmeyer LLP/code/trading/python/etf_trading/xetra"
-    start_path = current_script_path
+    start_path = os.path.dirname(__file__)
 
     @classmethod
     def get_random(cls):
