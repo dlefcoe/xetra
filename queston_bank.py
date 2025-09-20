@@ -17,7 +17,9 @@ class QA:
 
 
 class QuestionBank:
-    start_path = "C:/Users/darrenl/OneDrive - Goldenberg Hehmeyer LLP/code/trading/python/etf_trading/xetra"
+    current_script_path = os.path.abspath(__file__)
+    # start_path = "C:/Users/darrenl/OneDrive - Goldenberg Hehmeyer LLP/code/trading/python/etf_trading/xetra"
+    start_path = current_script_path
 
     @classmethod
     def get_random(cls):

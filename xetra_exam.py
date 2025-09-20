@@ -1,5 +1,8 @@
 """
-streamlit run "C:/Users/darrenl/OneDrive - Goldenberg Hehmeyer LLP/code/trading/python/etf_trading/xetra/xetra_exam.py"
+A Streamlit app to conduct a quiz using questions from QuestionBank.
+To run the app, use the command:
+    - navigate to the directory containing this file and execute:
+    - streamlit run xetra_exam.py
 """
 
 import streamlit as st
@@ -9,10 +12,11 @@ from queston_bank import QuestionBank
 def run_quiz():
     st.title("📘 Xetra Quiz")
 
+    max_questions = len(QuestionBank.questions)
     # --- Question range inputs ---
     col1, col2 = st.columns(2)
     lower = col1.number_input("Lower Question ID", min_value=1, value=1, step=1)
-    upper = col2.number_input("Upper Question ID", min_value=1, value=10, step=1)
+    upper = col2.number_input("Upper Question ID", min_value=1, value=max_questions, step=1)
 
     # --- Initialize session state ---
     if "current_question" not in st.session_state:
