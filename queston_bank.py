@@ -860,6 +860,10 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="2",
+            comment_hint="""
+            An immediate-or-cancel order is executed by immediate execution to the extent possible, with the unexecuted part of the order being deleted. 
+            This means that if only a portion of the order can be filled immediately, that portion will be executed, and the remainder will be canceled.   
+            """
         ),
         QA(
             id=73,
