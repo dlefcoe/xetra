@@ -1694,6 +1694,11 @@ class QuestionBank:
             4. Enter an adjusted standard quote (non-binding quote) and start the pre-call phase only after a period of 10 minutes.
             """,
             answer="1",
+            comment_hint="""
+            When a share's expected price differs by more than 10 pct from its last price, 
+            the specialist must enter a new non-binding quote and initiate a "freeze phase" that lasts for 5 minutes before trading can resume. 
+            This pause allows the market to react to the new price before a new auction or continuous trading begins.
+            """
         ),
         QA(
             id=137,
