@@ -772,6 +772,12 @@ class QuestionBank:
             4. Market surpluses are not displayed.
             """,
             answer="2",
+            comment_hint="""
+            During the call phase of an auction, the order book is partially closed.
+            This means that while new orders can still be entered, modified, or deleted,
+            the existing orders are not visible to market participants.
+            This partial closure helps to prevent market manipulation and ensures a fair price discovery process.
+            """,
         ),
         QA(
             id=62,
@@ -1640,6 +1646,10 @@ class QuestionBank:
             """,
             answer=["1", "3", "4"],
             answer_type="multiple",
+            comment_hint="""
+            During the freeze phase, the order book is frozen. 
+            During the freeze phase, the system collects order inputs, changes and deletions in a “suspended portfolio” until the freeze is lifted, whereupon they are immediately processed.
+            """,
         ),
         QA(
             id=135,
