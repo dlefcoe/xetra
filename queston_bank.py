@@ -875,6 +875,12 @@ class QuestionBank:
             4. A modification effects a deletion of the existing order and a new order entry with new time priority and new order number.
             """,
             answer="2",
+            comment_hint="""
+            When an order is modified, it does not always lead to a new time priority.
+            The order number remains unchanged even if the order receives a new time priority.
+            Order modifications are permissible during auctions.
+            A modification does not result in the deletion of the existing order and the creation of a new order with a new order number.
+            """
         ),
         QA(
             id=74,
