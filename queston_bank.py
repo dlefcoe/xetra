@@ -1416,6 +1416,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            gemeni_comment="Special Auction can be executed multiple times a day. If a Special Auction is scheduled, it is performed at least once a day.",
         ),
         QA(
             id=124,
