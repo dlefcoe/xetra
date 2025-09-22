@@ -507,6 +507,11 @@ class QuestionBank:
             4. The TES order functionality can only be used by admitted exchange traders.
             """,
             answer="3",
+            comment_hint="""
+            The T7 Entry Service (TES) is a platform that allows trading participants to enter off-book trades.
+            One of the key features of TES is that trades can only be concluded if the price is within a defined range.
+            This ensures that the trades are executed at fair market prices and helps maintain market integrity.
+            """,
         ),
         QA(
             id=41,
@@ -1094,6 +1099,12 @@ class QuestionBank:
             """,
             answer=["2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A quote by a Designated Sponsor is typically the simultaneous entry of a buy and sell limit order.
+            It is good for day (GFD) or good-till-cancelled (GTC).
+            A quote is a binding indication of a price level; it represents firm orders.
+            It can be valid in both continuous trading and auctions.
+            """,
         ),
         QA(
             id=92,
