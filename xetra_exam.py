@@ -66,7 +66,7 @@ def run_quiz():
 
     # --- Display image if available ---
     if q.link_pic:
-        st.image(q.link_pic, use_column_width=True)
+        st.image(q.link_pic, use_container_width=True)
 
     # --- Display options ---
     options = [line.strip() for line in q.choices.strip().split("\n") if line.strip()]
@@ -114,6 +114,10 @@ def run_quiz():
             else:
                 correct_display = q.answer
             st.error(f"❌ Incorrect. Correct answer: {correct_display}")
+
+            # 👉 Show comment_hint if available
+            if q.comment_hint:
+                st.info(f"💡 Hint: {q.comment_hint}")
 
         if st.button("Next Question"):
             st.session_state.go_next = True

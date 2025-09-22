@@ -12,7 +12,7 @@ class QA:
     choices: str
     answer: str
     answer_type: str = "single"
-    gemeni_comment: str = ""
+    comment_hint: str = ""
     link_pic: str = ""
 
 
@@ -201,6 +201,10 @@ class QuestionBank:
             4. Trading Surveillance Office can block the access to the exchange EDP for one, several or all companies.
             """,
             answer="4",
+            comment_hint="""
+            The Trading Surveillance Office (TSO) is primarily responsible for monitoring trading activities to ensure compliance with exchange rules and regulations. 
+            While the TSO has significant authority in overseeing market integrity, it does not have the authority to block access to the exchange EDP (Electronic Data Processing system) for trading participants.
+            """
         ),
         QA(
             id=17,
@@ -212,6 +216,10 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="1",
+            comment_hint="""
+            The Management Board of the Exchange has the authority to block access to the exchange EDP (Electronic Data Processing system) in case of technical problems.
+            This measure is taken to ensure the integrity and orderly functioning of the exchange trading system.   
+            """
         ),
         QA(
             id=18,
@@ -235,6 +243,14 @@ class QuestionBank:
             """,
             answer=["1", "2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A quote provider for a structured product is generally required to provide both bid and ask limits in its indicative quotes to ensure market liquidity and transparency.
+            However, there are specific situations where the quote provider is exempt from specifying an ask limit:
+            1. Sold-out status: If the security is completely sold out by the issuer, there is no availability for purchase, and thus no need to provide an ask limit.
+            2. Termination by the issuer: If the security has been terminated by the issuer, it is no longer available for trading, and therefore, an ask limit is not applicable.
+            3. Legal amendments: If the security is affected by a legal amendment that makes purchasing the security impossible, the quote provider is not required to provide an ask limit.
+            The third option, "When the market is sufficiently liquid," is not a valid reason for omitting the ask limit, as liquidity does not negate the requirement for both bid and ask limits in indicative quotes.
+            """,
         ),
         QA(
             id=20,
@@ -301,6 +317,10 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            In exchange transactions due for settlement, the seller is obligated to deliver the securities to the buyer, while the buyer is obligated to pay the corresponding cash amount for the securities.
+            This means that the payment obligation lies with the buyer, not the seller.
+            """,
         ),
         QA(
             id=26,
@@ -331,7 +351,7 @@ class QuestionBank:
             """,
             answer=["1", "3"],
             answer_type="multiple",
-            gemeni_comment="""
+            comment_hint="""
             Based on the search results, pre-arranged trades are a specific type of trade that requires a "Trade Request" to be entered beforehand. This is an exception to the general rule that prevents two parties from entering orders that would immediately execute against each other.
 
             The relevant rules state:
@@ -366,7 +386,7 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
-            gemeni_comment="""
+            comment_hint="""
             The first statement is correct: a trade request must be entered in the continuous trading model before the order.
 
             The second statement is also correct: the subsequent order must be entered within a specific time window, which is earliest 5 seconds and latest 35 seconds after the trade request.
@@ -399,6 +419,12 @@ class QuestionBank:
             """,
             answer=["2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A trade request must contain the quantity and the security.
+            The trader ID and limit are not required details for a trade request.
+            this is because the trade request is primarily used to signal the intention to enter a trade, 
+            and the specific details of the trade (like trader ID and limit) are typically provided when the actual order is entered following the trade request.
+            """,
         ),
         QA(
             id=33,
@@ -497,6 +523,11 @@ class QuestionBank:
             4. The TES order functionality can only be used by admitted exchange traders.
             """,
             answer="3",
+            comment_hint="""
+            The T7 Entry Service (TES) is a platform that allows trading participants to enter off-book trades.
+            One of the key features of TES is that trades can only be concluded if the price is within a defined range.
+            This ensures that the trades are executed at fair market prices and helps maintain market integrity.
+            """,
         ),
         QA(
             id=41,
@@ -599,6 +630,12 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            comment_hint="""
+            The trading model continuous trading in connection with auctions on the Xetra platform is designed to facilitate
+            the trading of selected shares, Exchange Traded Funds (ETFs), and Exchange Traded Products (ETPs).
+            This model does not encompass all securities listed at FWB, nor does it include bonds.
+            Therefore, the correct answer is that it includes selected shares, Exchange Traded Funds, and Exchange Traded Products.
+            """,
         ),
         QA(
             id=50,
@@ -693,6 +730,14 @@ class QuestionBank:
             4. A functionality to enter OTC transactions (T7 Entry Service - TES Typ OTC)
             """,
             answer="3",
+            comment_hint="""
+            The trading venue Xetra offers several functionalities to supplement on-exchange trading, including:
+            1. Request-for-Quote Functionality Xetra EnLight: This allows traders to request quotes from market makers for specific securities.
+            2. A functionality for off-book trading (T7 Entry Service - TES Typ LIS): This enables the execution of large in scale (LIS) trades off the main order book.
+            3. A functionality to enter OTC transactions (T7 Entry Service - TES Typ OTC): This allows for the entry of over-the-counter (OTC) transactions.
+            However, Xetra does not include a specific "Block trading functionality Xetra XXL." 
+            Block trades are typically large trades that are executed outside of the regular order book to minimize market impact, but there is no dedicated "XXL" functionality for this purpose on Xetra.
+            """,
         ),
         QA(
             id=59,
@@ -715,6 +760,13 @@ class QuestionBank:
             4. Only market and limit orders are allowed.
             """,
             answer="2",
+            comment_hint="""
+            Trade-at-Close (TaC) is a trading mechanism that occurs after the closing auction.
+            During TaC, there is pre-trade transparency, meaning that market participants can see the
+            order book and the prices at which trades can be executed.
+            The order book is not closed during TaC; instead, it remains open for participants to
+            enter new orders or modify existing ones.
+            """,
         ),
         QA(
             id=61,
@@ -726,6 +778,12 @@ class QuestionBank:
             4. Market surpluses are not displayed.
             """,
             answer="2",
+            comment_hint="""
+            During the call phase of an auction, the order book is partially closed.
+            This means that while new orders can still be entered, modified, or deleted,
+            the existing orders are not visible to market participants.
+            This partial closure helps to prevent market manipulation and ensures a fair price discovery process.
+            """,
         ),
         QA(
             id=62,
@@ -747,7 +805,7 @@ class QuestionBank:
             3. Iceberg orders and volume discovery orders participate with their full volume
             4. All of the above.
             """,
-            answer="2",
+            answer="4",
         ),
         QA(
             id=64,
@@ -771,6 +829,10 @@ class QuestionBank:
             """,
             answer=["1", "3"],
             answer_type="multiple",
+            comment_hint="""
+            The trading venue Xetra supports Iceberg Orders and Stop Limit Orders.
+            Hidden Orders and All-or-None Orders are not supported on Xetra.
+            """,
         ),
         QA(
             id=66,
@@ -819,6 +881,11 @@ class QuestionBank:
             """,
             answer=["2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            Hidden orders are not supported in continuous trading. They are only supported in auctions.
+            Order-on-event is not a supported order type on the Xetra trading venue.
+            Iceberg orders and Volume Discovery orders are supported in continuous trading.
+            """,
         ),
         QA(
             id=70,
@@ -831,6 +898,12 @@ class QuestionBank:
             """,
             answer=["1", "4"],
             answer_type="multiple",
+            comment_hint="""
+            Book-or-cancel orders are designed for passive execution only, meaning they will only be executed
+            if they can be matched with an existing order in the order book. If immediate execution is possible, the order is rejected.
+            They are not executed during volatility interruptions, as trading is typically halted during such periods.
+            There is no requirement for book-or-cancel orders to have a predefined minimum volume.
+            """,
         ),
         QA(
             id=71,
@@ -853,6 +926,10 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="2",
+            comment_hint="""
+            An immediate-or-cancel order is executed by immediate execution to the extent possible, with the unexecuted part of the order being deleted. 
+            This means that if only a portion of the order can be filled immediately, that portion will be executed, and the remainder will be canceled.   
+            """
         ),
         QA(
             id=73,
@@ -864,6 +941,12 @@ class QuestionBank:
             4. A modification effects a deletion of the existing order and a new order entry with new time priority and new order number.
             """,
             answer="2",
+            comment_hint="""
+            When an order is modified, it does not always lead to a new time priority.
+            The order number remains unchanged even if the order receives a new time priority.
+            Order modifications are permissible during auctions.
+            A modification does not result in the deletion of the existing order and the creation of a new order with a new order number.
+            """
         ),
         QA(
             id=74,
@@ -950,6 +1033,11 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            The ACE volatility interruption model is not assigned to all securities for all trading phases.
+            It is typically applied to specific securities or under certain market conditions, rather than universally across all
+            securities and trading phases.
+            """,
         ),
         QA(
             id=82,
@@ -980,6 +1068,11 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
+            comment_hint="""
+            The reference price for the static price corridor is adjusted based on auction prices and prices resulting from
+            a volatility interruption. 
+            Prices determined in continuous trading and indicative auction prices do not lead to an adjustment of the reference price.
+            """,
         ),
         QA(
             id=85,
@@ -1022,6 +1115,9 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            For Designated Sponsor quotes, only the validity constraints Good-for-day (GFD) and Good-till-cancelled (GTC) are possible.
+            """,
         ),
         QA(
             id=89,
@@ -1031,6 +1127,11 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            Not only Designated Sponsors can enter quotes. 
+            Other market participants, such as liquidity providers or
+            traders with specific roles, may also enter quotes depending on the market structure and regulations.
+            """,
         ),
         QA(
             id=90,
@@ -1055,6 +1156,12 @@ class QuestionBank:
             """,
             answer=["2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A quote by a Designated Sponsor is typically the simultaneous entry of a buy and sell limit order.
+            It is good for day (GFD) or good-till-cancelled (GTC).
+            A quote is a binding indication of a price level; it represents firm orders.
+            It can be valid in both continuous trading and auctions.
+            """,
         ),
         QA(
             id=92,
@@ -1333,6 +1440,7 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
+            comment_hint="There is exactly one specialist per security. There are no volatility interruptions in the Continuous Auction with Specialist.",
         ),
         QA(
             id=116,
@@ -1378,6 +1486,7 @@ class QuestionBank:
             4. If the ask limit of the matching quote equals or falls below the stop limit.
             """,
             answer="3",
+            comment_hint="the matching quote was high enough to trigger the stop limit.",
         ),
         QA(
             id=120,
@@ -1414,6 +1523,8 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            comment_hint="""Special Auction can be executed multiple times a day. 
+            If a Special Auction is scheduled, it is performed at least once a day.""",
         ),
         QA(
             id=124,
@@ -1513,6 +1624,10 @@ class QuestionBank:
             """,
             answer=["1", "4"],
             answer_type="multiple",
+            comment_hint="""In the Continuous Auction with Specialist trading model, stop orders and one-cancels-other orders are available
+            as order types. 
+            Market-to-limit orders and iceberg orders are not supported in this trading model.
+            """,
         ),
         QA(
             id=133,
@@ -1537,6 +1652,10 @@ class QuestionBank:
             """,
             answer=["1", "3", "4"],
             answer_type="multiple",
+            comment_hint="""
+            During the freeze phase, the order book is frozen. 
+            During the freeze phase, the system collects order inputs, changes and deletions in a “suspended portfolio” until the freeze is lifted, whereupon they are immediately processed.
+            """,
         ),
         QA(
             id=135,
@@ -1549,6 +1668,9 @@ class QuestionBank:
             """,
             answer=["3", "4"],
             answer_type="multiple",
+            comment_hint="""During the pre-call phase, trading participants can enter orders, 
+            but the order book is partially closed.
+            """,
         ),
         QA(
             id=136,
