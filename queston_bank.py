@@ -201,6 +201,10 @@ class QuestionBank:
             4. Trading Surveillance Office can block the access to the exchange EDP for one, several or all companies.
             """,
             answer="4",
+            gemeni_comment="""
+            The Trading Surveillance Office (TSO) is primarily responsible for monitoring trading activities to ensure compliance with exchange rules and regulations. 
+            While the TSO has significant authority in overseeing market integrity, it does not have the authority to block access to the exchange EDP (Electronic Data Processing system) for trading participants.
+            """
         ),
         QA(
             id=17,
@@ -212,6 +216,10 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="1",
+            gemeni_comment="""
+            The Management Board of the Exchange has the authority to block access to the exchange EDP (Electronic Data Processing system) in case of technical problems.
+            This measure is taken to ensure the integrity and orderly functioning of the exchange trading system.   
+            """
         ),
         QA(
             id=18,
