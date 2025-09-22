@@ -846,6 +846,12 @@ class QuestionBank:
             """,
             answer=["1", "4"],
             answer_type="multiple",
+            comment_hint="""
+            Book-or-cancel orders are designed for passive execution only, meaning they will only be executed
+            if they can be matched with an existing order in the order book. If immediate execution is possible, the order is rejected.
+            They are not executed during volatility interruptions, as trading is typically halted during such periods.
+            There is no requirement for book-or-cancel orders to have a predefined minimum volume.
+            """,
         ),
         QA(
             id=71,
@@ -1005,6 +1011,11 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
+            comment_hint="""
+            The reference price for the static price corridor is adjusted based on auction prices and prices resulting from
+            a volatility interruption. 
+            Prices determined in continuous trading and indicative auction prices do not lead to an adjustment of the reference price.
+            """,
         ),
         QA(
             id=85,
