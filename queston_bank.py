@@ -317,6 +317,10 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            In exchange transactions due for settlement, the seller is obligated to deliver the securities to the buyer, while the buyer is obligated to pay the corresponding cash amount for the securities.
+            This means that the payment obligation lies with the buyer, not the seller.
+            """,
         ),
         QA(
             id=26,
