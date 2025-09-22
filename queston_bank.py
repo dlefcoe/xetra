@@ -821,6 +821,11 @@ class QuestionBank:
             """,
             answer=["2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            Hidden orders are not supported in continuous trading. They are only supported in auctions.
+            Order-on-event is not a supported order type on the Xetra trading venue.
+            Iceberg orders and Volume Discovery orders are supported in continuous trading.
+            """,
         ),
         QA(
             id=70,
@@ -1335,6 +1340,7 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
+            comment_hint="There is exactly one specialist per security. There are no volatility interruptions in the Continuous Auction with Specialist.",
         ),
         QA(
             id=116,
