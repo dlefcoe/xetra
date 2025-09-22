@@ -109,8 +109,11 @@ def run_quiz():
 
     with col2:
         show_hint = st.toggle("Show Hint", key=f"hint_{q.id}")
-    if show_hint and q.comment_hint:
-        st.info(f"💡 Hint: {q.comment_hint}")
+    if show_hint: 
+        if q.comment_hint:
+            st.info(f"💡 Hint: {q.comment_hint}")
+        else:
+            st.info("💡 There is not hint. This question is too easy.")
 
 
     # --- Feedback and Next Question ---
