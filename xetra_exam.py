@@ -81,28 +81,60 @@ def run_quiz():
         if ans:
             user_answers.append(ans.split(".")[0].strip())
 
-    # --- Submit answer ---
-    if st.button("Submit Answer"):
-        if not user_answers:
-            st.warning("Please select at least one answer.")
-        else:
-            st.session_state.answered = True
+    # # --- Submit answer ---
+    # if st.button("Submit Answer"):
+    #     if not user_answers:
+    #         st.warning("Please select at least one answer.")
+    #     else:
+    #         st.session_state.answered = True
 
-            # Normalize correct answer
-            if isinstance(q.answer, list):
-                correct_set = set(str(a).strip() for a in q.answer)
+    #         # Normalize correct answer
+    #         if isinstance(q.answer, list):
+    #             correct_set = set(str(a).strip() for a in q.answer)
+    #         else:
+    #             correct_set = set(a.strip() for a in q.answer.split(","))
+
+    #         is_correct = set(user_answers) == correct_set
+    #         st.session_state.correct = is_correct
+
+    #         # Update score
+    #         st.session_state.total_count += 1
+    #         if is_correct:
+    #             st.session_state.correct_count += 1
+    #         else:
+    #             st.session_state.incorrect_count += 1
+
+    # --- Submit + Show Hint buttons side by side ---
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        if st.button("Submit Answer"):
+            if not user_answers:
+                st.warning("Please select at least one answer.")
             else:
-                correct_set = set(a.strip() for a in q.answer.split(","))
+                st.session_state.answered = True
 
-            is_correct = set(user_answers) == correct_set
-            st.session_state.correct = is_correct
+                # Normalize correct answer
+                if isinstance(q.answer, list):
+                    correct_set = set(str(a).strip() for a in q.answer)
+                else:
+                    correct_set = set(a.strip() for a in q.answer.split(","))
 
-            # Update score
-            st.session_state.total_count += 1
-            if is_correct:
-                st.session_state.correct_count += 1
-            else:
-                st.session_state.incorrect_count += 1
+                is_correct = set(user_answers) == correct_set
+                st.session_state.correct = is_correct
+
+                # Update score
+                st.session_state.total_count += 1
+                if is_correct:
+                    st.session_state.correct_count += 1
+                else:
+                    st.session_state.incorrect_count += 1
+
+    with col2:
+        show_hint = st.toggle("Show Hint", key=f"hint_{q.id}")
+        if show_hint and q.comment_hint:
+            st.info(f"💡 Hint: {q.comment_hint}")
+
 
     # --- Feedback and Next Question ---
     if st.session_state.answered:
