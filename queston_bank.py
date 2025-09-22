@@ -1668,8 +1668,9 @@ class QuestionBank:
             """,
             answer=["3", "4"],
             answer_type="multiple",
-            comment_hint="""During the pre-call phase, trading participants can enter orders, 
-            but the order book is partially closed.
+            comment_hint="""The pre-call phase allows all trading participants to enter **orders**, 
+            but the book is **partially closed**, showing **only the best bid/ask prices**. 
+            During this time, the specialist has unique access to manage the order book, including the ability to enter, modify, and delete their own orders and quotes.
             """,
         ),
         QA(
