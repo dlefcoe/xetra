@@ -740,6 +740,13 @@ class QuestionBank:
             4. Only market and limit orders are allowed.
             """,
             answer="2",
+            comment_hint="""
+            Trade-at-Close (TaC) is a trading mechanism that occurs after the closing auction.
+            During TaC, there is pre-trade transparency, meaning that market participants can see the
+            order book and the prices at which trades can be executed.
+            The order book is not closed during TaC; instead, it remains open for participants to
+            enter new orders or modify existing ones.
+            """,
         ),
         QA(
             id=61,
