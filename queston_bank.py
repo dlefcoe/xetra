@@ -1380,6 +1380,7 @@ class QuestionBank:
             4. If the ask limit of the matching quote equals or falls below the stop limit.
             """,
             answer="3",
+            comment_hint="the matching quote was high enough to trigger the stop limit.",
         ),
         QA(
             id=120,
