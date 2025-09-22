@@ -786,6 +786,10 @@ class QuestionBank:
             """,
             answer=["1", "3"],
             answer_type="multiple",
+            comment_hint="""
+            The trading venue Xetra supports Iceberg Orders and Stop Limit Orders.
+            Hidden Orders and All-or-None Orders are not supported on Xetra.
+            """,
         ),
         QA(
             id=66,
@@ -986,6 +990,11 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            The ACE volatility interruption model is not assigned to all securities for all trading phases.
+            It is typically applied to specific securities or under certain market conditions, rather than universally across all
+            securities and trading phases.
+            """,
         ),
         QA(
             id=82,
@@ -1075,6 +1084,11 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            Not only Designated Sponsors can enter quotes. 
+            Other market participants, such as liquidity providers or
+            traders with specific roles, may also enter quotes depending on the market structure and regulations.
+            """,
         ),
         QA(
             id=90,
@@ -1466,7 +1480,8 @@ class QuestionBank:
             2. False
             """,
             answer="1",
-            comment_hint="Special Auction can be executed multiple times a day. If a Special Auction is scheduled, it is performed at least once a day.",
+            comment_hint="""Special Auction can be executed multiple times a day. 
+            If a Special Auction is scheduled, it is performed at least once a day.""",
         ),
         QA(
             id=124,
