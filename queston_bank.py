@@ -1502,6 +1502,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            comment_hint=" a unique quote ID links the request, the specialist's quote, and the resulting order, ensuring a clear audit trail."
         ),
         QA(
             id=121,
