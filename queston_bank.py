@@ -473,7 +473,7 @@ class QuestionBank:
             """,
             answer=["1", "2", "3"],
             answer_type="multiple",
-            gemeni_comment="""
+            comment_hint="""
             A mistrade application must contain all the details necessary to identify the trade and the parties involved, 
             as well as the justification for why it should be considered a mistrade. 
             This includes the applicant's details, the transaction's specifics (time, volume, price), and information demonstrating the price was not in line with the market.
