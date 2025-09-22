@@ -113,7 +113,7 @@ def run_quiz():
         if q.comment_hint:
             st.info(f"💡 Hint: {q.comment_hint}")
         else:
-            st.info("💡 There is not hint. This question is too easy.")
+            st.info("💡 There is no hint. This question is too easy.")
 
 
     # --- Feedback and Next Question ---
