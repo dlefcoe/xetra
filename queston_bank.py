@@ -624,6 +624,12 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            comment_hint="""
+            The trading model continuous trading in connection with auctions on the Xetra platform is designed to facilitate
+            the trading of selected shares, Exchange Traded Funds (ETFs), and Exchange Traded Products (ETPs).
+            This model does not encompass all securities listed at FWB, nor does it include bonds.
+            Therefore, the correct answer is that it includes selected shares, Exchange Traded Funds, and Exchange Traded Products.
+            """,
         ),
         QA(
             id=50,
@@ -718,6 +724,14 @@ class QuestionBank:
             4. A functionality to enter OTC transactions (T7 Entry Service - TES Typ OTC)
             """,
             answer="3",
+            comment_hint="""
+            The trading venue Xetra offers several functionalities to supplement on-exchange trading, including:
+            1. Request-for-Quote Functionality Xetra EnLight: This allows traders to request quotes from market makers for specific securities.
+            2. A functionality for off-book trading (T7 Entry Service - TES Typ LIS): This enables the execution of large in scale (LIS) trades off the main order book.
+            3. A functionality to enter OTC transactions (T7 Entry Service - TES Typ OTC): This allows for the entry of over-the-counter (OTC) transactions.
+            However, Xetra does not include a specific "Block trading functionality Xetra XXL." 
+            Block trades are typically large trades that are executed outside of the regular order book to minimize market impact, but there is no dedicated "XXL" functionality for this purpose on Xetra.
+            """,
         ),
         QA(
             id=59,
@@ -1638,6 +1652,9 @@ class QuestionBank:
             """,
             answer=["3", "4"],
             answer_type="multiple",
+            comment_hint="""During the pre-call phase, trading participants can enter orders, 
+            but the order book is partially closed.
+            """,
         ),
         QA(
             id=136,
