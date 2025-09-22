@@ -1581,6 +1581,10 @@ class QuestionBank:
             """,
             answer=["1", "4"],
             answer_type="multiple",
+            comment_hint="""In the Continuous Auction with Specialist trading model, stop orders and one-cancels-other orders are available
+            as order types. 
+            Market-to-limit orders and iceberg orders are not supported in this trading model.
+            """,
         ),
         QA(
             id=133,
