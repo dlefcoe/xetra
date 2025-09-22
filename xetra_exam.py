@@ -115,6 +115,10 @@ def run_quiz():
                 correct_display = q.answer
             st.error(f"❌ Incorrect. Correct answer: {correct_display}")
 
+            # 👉 Show comment_hint if available
+            if q.comment_hint:
+                st.info(f"💡 Hint: {q.comment_hint}")
+
         if st.button("Next Question"):
             st.session_state.go_next = True
             st.rerun()

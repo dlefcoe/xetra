@@ -12,7 +12,7 @@ class QA:
     choices: str
     answer: str
     answer_type: str = "single"
-    gemeni_comment: str = ""
+    comment_hint: str = ""
     link_pic: str = ""
 
 
@@ -201,7 +201,7 @@ class QuestionBank:
             4. Trading Surveillance Office can block the access to the exchange EDP for one, several or all companies.
             """,
             answer="4",
-            gemeni_comment="""
+            comment_hint="""
             The Trading Surveillance Office (TSO) is primarily responsible for monitoring trading activities to ensure compliance with exchange rules and regulations. 
             While the TSO has significant authority in overseeing market integrity, it does not have the authority to block access to the exchange EDP (Electronic Data Processing system) for trading participants.
             """
@@ -216,7 +216,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="1",
-            gemeni_comment="""
+            comment_hint="""
             The Management Board of the Exchange has the authority to block access to the exchange EDP (Electronic Data Processing system) in case of technical problems.
             This measure is taken to ensure the integrity and orderly functioning of the exchange trading system.   
             """
@@ -339,7 +339,7 @@ class QuestionBank:
             """,
             answer=["1", "3"],
             answer_type="multiple",
-            gemeni_comment="""
+            comment_hint="""
             Based on the search results, pre-arranged trades are a specific type of trade that requires a "Trade Request" to be entered beforehand. This is an exception to the general rule that prevents two parties from entering orders that would immediately execute against each other.
 
             The relevant rules state:
@@ -374,7 +374,7 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
-            gemeni_comment="""
+            comment_hint="""
             The first statement is correct: a trade request must be entered in the continuous trading model before the order.
 
             The second statement is also correct: the subsequent order must be entered within a specific time window, which is earliest 5 seconds and latest 35 seconds after the trade request.
@@ -1416,7 +1416,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
-            gemeni_comment="Special Auction can be executed multiple times a day. If a Special Auction is scheduled, it is performed at least once a day.",
+            comment_hint="Special Auction can be executed multiple times a day. If a Special Auction is scheduled, it is performed at least once a day.",
         ),
         QA(
             id=124,
