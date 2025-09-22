@@ -243,6 +243,14 @@ class QuestionBank:
             """,
             answer=["1", "2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A quote provider for a structured product is generally required to provide both bid and ask limits in its indicative quotes to ensure market liquidity and transparency.
+            However, there are specific situations where the quote provider is exempt from specifying an ask limit:
+            1. Sold-out status: If the security is completely sold out by the issuer, there is no availability for purchase, and thus no need to provide an ask limit.
+            2. Termination by the issuer: If the security has been terminated by the issuer, it is no longer available for trading, and therefore, an ask limit is not applicable.
+            3. Legal amendments: If the security is affected by a legal amendment that makes purchasing the security impossible, the quote provider is not required to provide an ask limit.
+            The third option, "When the market is sufficiently liquid," is not a valid reason for omitting the ask limit, as liquidity does not negate the requirement for both bid and ask limits in indicative quotes.
+            """,
         ),
         QA(
             id=20,
@@ -1039,6 +1047,9 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            comment_hint="""
+            For Designated Sponsor quotes, only the validity constraints Good-for-day (GFD) and Good-till-cancelled (GTC) are possible.
+            """,
         ),
         QA(
             id=89,
