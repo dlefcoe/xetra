@@ -419,6 +419,12 @@ class QuestionBank:
             """,
             answer=["2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            A trade request must contain the quantity and the security.
+            The trader ID and limit are not required details for a trade request.
+            this is because the trade request is primarily used to signal the intention to enter a trade, 
+            and the specific details of the trade (like trader ID and limit) are typically provided when the actual order is entered following the trade request.
+            """,
         ),
         QA(
             id=33,
