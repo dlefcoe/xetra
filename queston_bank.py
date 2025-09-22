@@ -1511,6 +1511,11 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            comment_hint="""
+            A Specialist on a stock exchange has a unique role that includes managing liquidity and supporting the market for the securities they are assigned. 
+            Part of this role grants them the authority to not only enter orders on their own behalf 
+            but also to act as an agent for other trading participants, entering orders for them in the specialist's assigned securities.
+            """
         ),
         QA(
             id=122,
