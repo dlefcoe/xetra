@@ -246,6 +246,7 @@ class QuestionBank:
             comment_hint="""
             A quote provider for a structured product is generally required to provide both bid and ask limits in its indicative quotes to ensure market liquidity and transparency.
             However, there are specific situations where the quote provider is exempt from specifying an ask limit:
+            
             1. Sold-out status: If the security is completely sold out by the issuer, there is no availability for purchase, and thus no need to provide an ask limit.
             2. Termination by the issuer: If the security has been terminated by the issuer, it is no longer available for trading, and therefore, an ask limit is not applicable.
             3. Legal amendments: If the security is affected by a legal amendment that makes purchasing the security impossible, the quote provider is not required to provide an ask limit.
