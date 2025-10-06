@@ -1197,6 +1197,14 @@ class QuestionBank:
             """,
             answer=["1", "2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            Designated Sponsors (DS) on Xetra are market makers whose main duties are to enhance liquidity 
+            (1) by providing continuous quotes and responding to quote requests 
+            (2) They are also required to participate in auctions 
+            (4) by entering quotes to ensure robust price discovery. 
+            
+            They do not set the official market reference prices (3).
+            """
         ),
         QA(
             id=93,
