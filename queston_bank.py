@@ -246,10 +246,11 @@ class QuestionBank:
             comment_hint="""
             A quote provider for a structured product is generally required to provide both bid and ask limits in its indicative quotes to ensure market liquidity and transparency.
             However, there are specific situations where the quote provider is exempt from specifying an ask limit:
-            
+
             1. Sold-out status: If the security is completely sold out by the issuer, there is no availability for purchase, and thus no need to provide an ask limit.
             2. Termination by the issuer: If the security has been terminated by the issuer, it is no longer available for trading, and therefore, an ask limit is not applicable.
             3. Legal amendments: If the security is affected by a legal amendment that makes purchasing the security impossible, the quote provider is not required to provide an ask limit.
+            
             The third option, "When the market is sufficiently liquid," is not a valid reason for omitting the ask limit, as liquidity does not negate the requirement for both bid and ask limits in indicative quotes.
             """,
         ),
@@ -502,6 +503,12 @@ class QuestionBank:
             4. Counterparties involved in a transaction receive an electronic execution confirmation.
             """,
             answer="3",
+            comment_hint="""
+            Think about who is the actual counterparty for cleared transactions and what "self-execution" means. 
+            The clearing house (CCP) guarantees the trade, so the original parties no longer have a claim against each other. 
+            Self Execution cannot be cleared. 
+            The two concepts are mutually exclusive.
+            """
         ),
         QA(
             id=39,
@@ -1013,6 +1020,13 @@ class QuestionBank:
             4. Suspension of trading.
             """,
             answer="3",
+            comment_hint="""
+            Significant price deviations do not automatically delete orders; 
+            they can trigger an order book suspension to allow the market to re-establish a fair price. 
+            In contrast, corporate actions like dividend payments and granting of subscription rights often result 
+            in adjustments or deletions of orders to prevent unfair gains or losses. 
+            Trading suspensions also lead to order deletions to maintain market integrity during a halt.
+            """
         ),
         QA(
             id=80,
@@ -1377,6 +1391,12 @@ class QuestionBank:
             """,
             answer=["1", "2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            Execution conditions like FOK (Fill or Kill) or IOC (Immediate or Cancel) are not supported in this model. 
+            
+            Stop orders are triggered by a matching quote from the specialist, not by an executed trade price, 
+            and the matching quote used to initiate the price determination is deleted once the auction is completed.
+            """
         ),
         QA(
             id=110,
@@ -1468,6 +1488,12 @@ class QuestionBank:
             """,
             answer=["2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            The Continuous Auction with Specialist model is designed for less liquid securities and has unique rules. 
+            
+            A specialist's matching quote is a one-time trigger for price determination, 
+            and the price is always set to maximize the volume of trades, not based on order entry time.
+            """
         ),
         QA(
             id=117,
@@ -1772,6 +1798,11 @@ class QuestionBank:
             4. Entry of a standard quote.
             """,
             answer="4",
+            comment_hint="""
+            During the freeze phase, the specialist can no longer enter a standard quote because trading is temporarily halted. 
+            This period is specifically for order entry and other administrative tasks before the market reopens, not for quoting prices. 
+            Therefore, the ability to submit a standard quote is disabled.
+            """
         ),
         QA(
             id=142,
