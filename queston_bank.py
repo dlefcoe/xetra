@@ -1221,12 +1221,10 @@ class QuestionBank:
             In a Xetra auction, the system determines the optimal price that maximizes the executed volume. 
             However, when multiple prices could clear the maximum volume, or in cases where the order book is perfectly balanced (no surplus), 
             the system needs a tie-breaker rule to select the final auction price.
-
             The reference price is used precisely in these ambiguous scenarios, specifically 
-                (3) if there are several possible limits and there is both an ask surplus and a bid surplus 
+                - (3) if there are several possible limits and there is both an ask surplus and a bid surplus 
                 (meaning the surpluses cancel each other out at the maximum volume price),
-            
-            and (4) if there are several possible limits and there is no surplus on hand (a perfectly balanced book). 
+            and - (4) if there are several possible limits and there is no surplus on hand (a perfectly balanced book). 
             """
         ),
         QA(
