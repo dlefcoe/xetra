@@ -10,7 +10,7 @@ class QA:
     question: str
     choices: str
     answer: str
-    answer_type: str = "single" | "multiple" | "true_false"
+    answer_type: str = "single" #| "multiple" | "true_false"
     comment_hint: str = ""
     link_pic: str = ""
 
