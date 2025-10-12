@@ -1,6 +1,7 @@
 import os
 import random
 from dataclasses import dataclass
+from typing import Literal
 
 
 # --- Question/Answer structure ---
@@ -10,7 +11,7 @@ class QA:
     question: str
     choices: str
     answer: str
-    answer_type: str = "single" #| "multiple" | "true_false"
+    answer_type: Literal["single", "multiple", "true_false"] = "single"
     comment_hint: str = ""
     link_pic: str = ""
 
