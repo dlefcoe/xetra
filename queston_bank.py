@@ -8,7 +8,6 @@ from dataclasses import dataclass
 class QA:
     id: int
     question: str
-
     choices: str
     answer: str
     answer_type: str = "single"
