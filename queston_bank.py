@@ -41,6 +41,7 @@ class QuestionBank:
             4. Admission of securities
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=2,
@@ -52,6 +53,7 @@ class QuestionBank:
             4. Exchange Council
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=3,
@@ -63,6 +65,7 @@ class QuestionBank:
             4. Prosecution of insider trading violations
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=4,
@@ -74,6 +77,7 @@ class QuestionBank:
             4. German Exchange Supervisory Act
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=5,
@@ -85,6 +89,7 @@ class QuestionBank:
             4. Exchange Supervisory Authority
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=6,
@@ -96,6 +101,7 @@ class QuestionBank:
             4. Irrevocable withdrawal of the trading license
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=7,
@@ -105,6 +111,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=8,
@@ -114,6 +121,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=9,
@@ -123,6 +131,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=10,
@@ -134,6 +143,7 @@ class QuestionBank:
             4. On the day of the stock corporation's annual general meeting.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=11,
@@ -145,6 +155,7 @@ class QuestionBank:
             4. The Exchange Supervisory Authority and the Exchange Council
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=12,
@@ -156,6 +167,7 @@ class QuestionBank:
             4. If trading in the regulated market is interrupted by the Management Board existing orders are not deleted.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=13,
@@ -167,6 +179,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=14,
@@ -178,6 +191,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=15,
@@ -189,6 +203,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=16,
@@ -200,6 +215,7 @@ class QuestionBank:
             4. Trading Surveillance Office can block the access to the exchange EDP for one, several or all companies.
             """,
             answer="4",
+            answer_type="single",
             comment_hint="""
             The Trading Surveillance Office (TSO) is primarily responsible for monitoring trading activities to ensure compliance with exchange rules and regulations. 
             While the TSO has significant authority in overseeing market integrity, it does not have the authority to block access to the exchange EDP (Electronic Data Processing system) for trading participants.
@@ -215,6 +231,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="1",
+            answer_type="single",
             comment_hint="""
             The Management Board of the Exchange has the authority to block access to the exchange EDP (Electronic Data Processing system) in case of technical problems.
             This measure is taken to ensure the integrity and orderly functioning of the exchange trading system.   
@@ -230,6 +247,7 @@ class QuestionBank:
             4. By mentioning the system password.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=19,
@@ -287,6 +305,7 @@ class QuestionBank:
             4. Management Board of the Exchange
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=23,
@@ -298,6 +317,7 @@ class QuestionBank:
             4. They need an expert contact person who is admitted for the company as exchange trader at the FWB.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=24,
@@ -309,6 +329,7 @@ class QuestionBank:
             4. All the answers are correct.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=25,
@@ -318,6 +339,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
             comment_hint="""
             In exchange transactions due for settlement, the seller is obligated to deliver the securities to the buyer, while the buyer is obligated to pay the corresponding cash amount for the securities.
             This means that the payment obligation lies with the buyer, not the seller.
@@ -331,6 +353,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=27,
@@ -340,6 +363,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=28,
@@ -491,6 +515,7 @@ class QuestionBank:
             4. To sell the undelivered securities after expiry of a grace period.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=38,
@@ -502,6 +527,7 @@ class QuestionBank:
             4. Counterparties involved in a transaction receive an electronic execution confirmation.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             Think about who is the actual counterparty for cleared transactions and what "self-execution" means. 
             The clearing house (CCP) guarantees the trade, so the original parties no longer have a claim against each other. 
@@ -519,6 +545,7 @@ class QuestionBank:
             4. All answers are correct.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=40,
@@ -530,6 +557,7 @@ class QuestionBank:
             4. The TES order functionality can only be used by admitted exchange traders.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             The T7 Entry Service (TES) is a platform that allows trading participants to enter off-book trades.
             One of the key features of TES is that trades can only be concluded if the price is within a defined range.
@@ -546,6 +574,7 @@ class QuestionBank:
             4. If the trade was entered by an employee of the trading participant who is not admitted to trading.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=42,
@@ -557,6 +586,7 @@ class QuestionBank:
             4. All answers are correct.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=43,
@@ -568,6 +598,7 @@ class QuestionBank:
             4. In particular, the Management Board may suspend trading in the relevant fund units in the event of a suspension of the repurchase of fund units or the closure of a fund.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=44,
@@ -579,6 +610,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=45,
@@ -590,6 +622,7 @@ class QuestionBank:
             4. During trading hours, binding quotes must be submitted on an ongoing basis.
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=46,
@@ -637,6 +670,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             The trading model continuous trading in connection with auctions on the Xetra platform is designed to facilitate
             the trading of selected shares, Exchange Traded Funds (ETFs), and Exchange Traded Products (ETPs).
@@ -654,6 +688,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=51,
@@ -665,6 +700,7 @@ class QuestionBank:
             4. Quote provider.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=52,
@@ -686,6 +722,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=54,
@@ -695,6 +732,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=55,
@@ -704,6 +742,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=56,
@@ -715,6 +754,7 @@ class QuestionBank:
             4. The indicative auction price of the opening call is displayed during the pre-trading phase.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=57,
@@ -726,6 +766,7 @@ class QuestionBank:
             4. The order book in continuous trading is open.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=58,
@@ -737,6 +778,7 @@ class QuestionBank:
             4. A functionality to enter OTC transactions (T7 Entry Service - TES Typ OTC)
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             The trading venue Xetra offers several functionalities to supplement on-exchange trading, including:
             1. Request-for-Quote Functionality Xetra EnLight: This allows traders to request quotes from market makers for specific securities.
@@ -756,6 +798,7 @@ class QuestionBank:
             4. Minimum of 15, maximum of 30 seconds
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=60,
@@ -767,6 +810,7 @@ class QuestionBank:
             4. Only market and limit orders are allowed.
             """,
             answer="2",
+            answer_type="single",
             comment_hint="""
             Trade-at-Close (TaC) is a trading mechanism that occurs after the closing auction.
             During TaC, there is pre-trade transparency, meaning that market participants can see the
@@ -784,6 +828,7 @@ class QuestionBank:
             4. Market surpluses are not displayed.
             """,
             answer="2",
+            answer_type="single",
             comment_hint="""
             During the call phase of an auction, the order book is partially closed.
             This means that while new orders can still be entered, modified, or deleted,
@@ -801,6 +846,7 @@ class QuestionBank:
             4. An opening auction is only carried out if the order book is crossed.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=63,
@@ -812,6 +858,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=64,
@@ -823,6 +870,7 @@ class QuestionBank:
             4. New orders are checked for Self Match Prevention.
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=65,
@@ -921,6 +969,7 @@ class QuestionBank:
             4. Immediately and fully or not at all.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=72,
@@ -932,6 +981,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="2",
+            answer_type="single",
             comment_hint="""
             An immediate-or-cancel order is executed by immediate execution to the extent possible, with the unexecuted part of the order being deleted. 
             This means that if only a portion of the order can be filled immediately, that portion will be executed, and the remainder will be canceled.   
@@ -947,6 +997,7 @@ class QuestionBank:
             4. A modification effects a deletion of the existing order and a new order entry with new time priority and new order number.
             """,
             answer="2",
+            answer_type="single",
             comment_hint="""
             When an order is modified, it does not always lead to a new time priority.
             The order number remains unchanged even if the order receives a new time priority.
@@ -964,6 +1015,7 @@ class QuestionBank:
             4. Good-till-cancelled (GTC)
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=75,
@@ -975,6 +1027,7 @@ class QuestionBank:
             4. In case of a partial execution the non-executed parts of the order are deleted.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=76,
@@ -986,6 +1039,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=77,
@@ -997,6 +1051,7 @@ class QuestionBank:
             4. Neither event has an influence on unexecuted orders.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=78,
@@ -1008,6 +1063,7 @@ class QuestionBank:
             4. Orders need to be specified as proprietary or agent orders.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=79,
@@ -1019,6 +1075,7 @@ class QuestionBank:
             4. Suspension of trading.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             Significant price deviations do not automatically delete orders; 
             they can trigger an order book suspension to allow the market to re-establish a fair price. 
@@ -1037,6 +1094,7 @@ class QuestionBank:
             4. The sweep order goes on to the open order book (Xetra Central Limit Orderbook) and checks for execution.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=81,
@@ -1046,6 +1104,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
             comment_hint="""
             The ACE volatility interruption model is not assigned to all securities for all trading phases.
             It is typically applied to specific securities or under certain market conditions, rather than universally across all
@@ -1060,6 +1119,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=83,
@@ -1069,6 +1129,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=84,
@@ -1128,6 +1189,12 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
+            comment_hint="""
+            Designated Sponsors (DS) on Xetra are market makers who have the obligation to provide liquidity by continuously quoting 
+            both buy and sell prices (double-sided quotes) or placing corresponding orders for a certain minimum time during continuous trading.
+            This obligation helps to ensure that there is always a market for the securities they are responsible for, thereby enhancing market liquidity and stability.
+            """,
         ),
         QA(
             id=88,
@@ -1137,6 +1204,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
             comment_hint="""
             For Designated Sponsor quotes, only the validity constraints Good-for-day (GFD) and Good-till-cancelled (GTC) are possible.
             """,
@@ -1149,6 +1217,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
             comment_hint="""
             Not only Designated Sponsors can enter quotes. 
             Other market participants, such as liquidity providers or
@@ -1260,6 +1329,7 @@ class QuestionBank:
             4. None of the above
             """,
             answer="3",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_96.png"),
         ),
         QA(
@@ -1272,6 +1342,7 @@ class QuestionBank:
             4. 343
             """,
             answer="3",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_97.png"),
         ),
         QA(
@@ -1284,6 +1355,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="2",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_98.png"),
         ),
         QA(
@@ -1296,6 +1368,7 @@ class QuestionBank:
             4. 3.500 at 180 and 1.500 at 178.
             """,
             answer="4",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_99.png"),
         ),
         QA(
@@ -1308,6 +1381,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_100.png"),
         ),
         QA(
@@ -1320,6 +1394,7 @@ class QuestionBank:
             4. No execution, the order is rejected without entry in the order book.
             """,
             answer="4",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_101.png"),
         ),
         QA(
@@ -1332,6 +1407,7 @@ class QuestionBank:
             4. 100 at 22.50, 100 at 22.95 and 300 at 23.
             """,
             answer="3",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_102.png"),
         ),
         QA(
@@ -1344,6 +1420,7 @@ class QuestionBank:
             4. No execution.
             """,
             answer="4",
+            answer_type="single",
             link_pic=os.path.join(start_path, "img", "question_103.png"),
         ),
         QA(
@@ -1356,6 +1433,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=105,
@@ -1365,6 +1443,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=106,
@@ -1374,6 +1453,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=107,
@@ -1383,6 +1463,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=108,
@@ -1521,6 +1602,7 @@ class QuestionBank:
             4. According to the modified principle of highest executable volume, only within the price range determined by the order book.
             """,
             answer="2",
+            answer_type="single",
         ),
         QA(
             id=118,
@@ -1532,6 +1614,8 @@ class QuestionBank:
             4. If the bid limit of the matching quote equals or falls below the stop limit.
             """,
             answer="4",
+            answer_type="single",
+            comment_hint="the matching quote was low enough to trigger the stop limit.",
         ),
         QA(
             id=119,
@@ -1543,6 +1627,7 @@ class QuestionBank:
             4. If the ask limit of the matching quote equals or falls below the stop limit.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="the matching quote was high enough to trigger the stop limit.",
         ),
         QA(
@@ -1553,6 +1638,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
             comment_hint=" a unique quote ID links the request, the specialist's quote, and the resulting order, ensuring a clear audit trail."
         ),
         QA(
@@ -1563,6 +1649,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
             comment_hint="""
             A Specialist on a stock exchange has a unique role that includes managing liquidity and supporting the market for the securities they are assigned. 
             Part of this role grants them the authority to not only enter orders on their own behalf 
@@ -1577,6 +1664,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=123,
@@ -1586,6 +1674,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
             comment_hint="""Special Auction can be executed multiple times a day. 
             If a Special Auction is scheduled, it is performed at least once a day.""",
         ),
@@ -1597,6 +1686,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=125,
@@ -1606,6 +1696,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=126,
@@ -1615,6 +1706,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=127,
@@ -1757,6 +1849,7 @@ class QuestionBank:
             4. Enter an adjusted standard quote (non-binding quote) and start the pre-call phase only after a period of 10 minutes.
             """,
             answer="1",
+            answer_type="single",
             comment_hint="""
             When a share's expected price differs by more than 10 pct from its last price, 
             the specialist must enter a new non-binding quote and initiate a "freeze phase" that lasts for 5 minutes before trading can resume. 
@@ -1773,6 +1866,7 @@ class QuestionBank:
             4. None of the above.
             """,
             answer="3",
+            answer_type="single",
         ),
         QA(
             id=138,
@@ -1784,6 +1878,7 @@ class QuestionBank:
             4. All of the above.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=139,
@@ -1796,6 +1891,7 @@ class QuestionBank:
             5. During trading hours, continuously provide standard quotes (non-binding quotes) on the basis of the current order situation, taking into account any reference market.
             """,
             answer="3",
+            answer_type="single",
             comment_hint="""
             Choice 3 is incorrect because a PWT price determination (or price determination without turnover) 
             is an automatic function of the exchange's trading system. 
@@ -1814,6 +1910,7 @@ class QuestionBank:
             4. All of the above mentioned requirements.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=141,
@@ -1825,6 +1922,7 @@ class QuestionBank:
             4. Entry of a standard quote.
             """,
             answer="4",
+            answer_type="single",
             comment_hint="""
             During the freeze phase, the specialist can no longer enter a standard quote because trading is temporarily halted. 
             This period is specifically for order entry and other administrative tasks before the market reopens, not for quoting prices. 
@@ -1839,6 +1937,7 @@ class QuestionBank:
             2. False
             """,
             answer="1",
+            answer_type="true_false",
         ),
         QA(
             id=143,
@@ -1848,6 +1947,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=144,
@@ -1857,6 +1957,7 @@ class QuestionBank:
             2. False
             """,
             answer="2",
+            answer_type="true_false",
         ),
         QA(
             id=145,
@@ -1904,6 +2005,7 @@ class QuestionBank:
             4. None of the above answers is correct.
             """,
             answer="1",
+            answer_type="single",
         ),
         QA(
             id=149,
@@ -1915,6 +2017,7 @@ class QuestionBank:
             4. If a corresponding quote has been entered and there is no executable order book situation.
             """,
             answer="4",
+            answer_type="single",
         ),
         QA(
             id=150,
@@ -1926,5 +2029,6 @@ class QuestionBank:
             4. None of the above answers is correct.
             """,
             answer="3",
+            answer_type="single",
         ),
     ]
