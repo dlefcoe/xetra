@@ -1744,6 +1744,12 @@ class QuestionBank:
             """,
             answer=["1", "2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            In the event of a knock-out or threshold breach for structured products, trading is typically suspended to prevent disorderly market conditions. 
+            After the suspension is lifted, only sell orders are generally permitted to allow investors to exit their positions. 
+            The specialist plays a crucial role in managing the market for these securities during such events,
+            often entering single-sided quotes to facilitate repurchasing.
+            """,
         ),
         QA(
             id=130,
