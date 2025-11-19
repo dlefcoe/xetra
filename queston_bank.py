@@ -123,6 +123,10 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""
+            the Deutsche Börse AG is the parent company and the organizing institution of the Frankfurt Stock Exchange 
+            (which operates Xetra), but it is not the Central Counterparty (CCP) itself.
+            """
         ),
         QA(
             id=9,
