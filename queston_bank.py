@@ -418,9 +418,9 @@ class QuestionBank:
             answer_type="multiple",
             comment_hint="""
             The first statement is correct: 
-            a trade request must be entered in the continuous trading model before the order.
+            a trade request must be entered in the continuous trading model before the order.\n
             The second statement is also correct: 
-            the subsequent order must be entered within a specific time window, which is earliest 5 seconds and latest 35 seconds after the trade request.
+            the subsequent order must be entered within a specific time window, which is earliest 5 seconds and latest 35 seconds after the trade request.\n
             The third statement, about announcing the trade to the trading surveillance office, is not a requirement for permitting the trade itself. The rules focus on the automated process via the trading system.
             The fourth statement is not a recognized condition for permitting these types of trades.
             """,
