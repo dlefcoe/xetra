@@ -748,6 +748,10 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""
+            The exchange system uses the entire, overall volume of the Iceberg order when calculating the highest executable volume and determining the official auction price. 
+            If only the small visible peak were used, the determined price would not accurately reflect the actual supply and demand.
+            """
         ),
         QA(
             id=56,
