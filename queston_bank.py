@@ -1784,9 +1784,9 @@ class QuestionBank:
             Special Auctions on the Xetra platform (which uses the Specialist model for certain securities) are typically reserved for security types 
             that might have lower trading volumes or require specific handling outside the standard continuous trading mechanisms,
             especially for larger orders. 
-            - The correct answers are Subscription rights (1) and German Government Bonds (3). 
-            - Subscription rights often have a short trading life and unique liquidity needs, making the auction a practical mechanism. 
-            - German Government Bonds (Bunds) can also be subject to Special Auctions to ensure orderly execution of large block trades outside 
+            The correct answers are Subscription rights (1) and German Government Bonds (3). 
+            Subscription rights often have a short trading life and unique liquidity needs, making the auction a practical mechanism. 
+            German Government Bonds (Bunds) can also be subject to Special Auctions to ensure orderly execution of large block trades outside 
             the standard order book, complementing the high-volume, but often fragmented, bond market.
             """
         ),
