@@ -1498,7 +1498,6 @@ class QuestionBank:
             answer_type="multiple",
             comment_hint="""
             Execution conditions like FOK (Fill or Kill) or IOC (Immediate or Cancel) are not supported in this model. 
-            
             Stop orders are triggered by a matching quote from the specialist, not by an executed trade price, 
             and the matching quote used to initiate the price determination is deleted once the auction is completed.
             """
