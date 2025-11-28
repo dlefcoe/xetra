@@ -1131,6 +1131,8 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""
+            it can be outside of either price ranges [1] Dynamic Corridor , [2] Static Corridor"""
         ),
         QA(
             id=83,
