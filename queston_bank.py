@@ -1531,9 +1531,8 @@ class QuestionBank:
             answer_type="multiple",
             comment_hint="""
             In the Continuous Auction with Specialist model, the order book's visibility *changes* with each trading phase.
-
-            During the pre-trading phase, the order book is partially closed (Choice 3), meaning only the *best bid and ask prices* are visible to the public. 
-            During the post-trading phase, all trading has concluded, and the *order book is closed* (Choice 4) to new order entry and execution.
+            > During the pre-trading phase, the order book is partially closed (Choice 3), meaning only the *best bid and ask prices* are visible to the public. 
+            > During the post-trading phase, all trading has concluded, and the *order book is closed* (Choice 4) to new order entry and execution.
             """
         ),
         QA(
