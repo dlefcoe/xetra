@@ -1188,10 +1188,8 @@ class QuestionBank:
             comment_hint="""
             The dynamic price range is a narrow band around the last traded price. 
             A violation occurs when the indicative price is either above or below this moving range.
-
             The static price range is a wider band around a longer-term reference price, such as the closing price of the last auction. 
             This range provides a larger buffer for price movements.
-
             A volatility interruption is initiated if the indicative price lies outside *either* of these ranges
             """
         ),
