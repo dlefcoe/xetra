@@ -737,6 +737,9 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""Trade at close (TaC) needs: [1] Successful Price Determination and [2] Positive Turnover 
+            If there is Zero turnover then session is skipped.
+            """
         ),
         QA(
             id=55,
