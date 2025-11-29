@@ -663,6 +663,9 @@ class QuestionBank:
             """,
             answer=["1", "2", "4"],
             answer_type="multiple",
+            comment_hint="""
+            Partials (fills of whole shares) are allowed, but Fractions (of shares) are not supported
+            """,
         ),
         QA(
             id=49,
