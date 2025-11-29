@@ -2003,6 +2003,11 @@ class QuestionBank:
             """,
             answer=["2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            In the Continuous Auction with Specialist model, a price without turnover is determined when there are no executable orders in the book. 
+            This process is initiated by the specialist entering a specific quote designated for price without turnover.
+            The price is then calculated based on the bid side of that quote, reflecting the specialist's assessment of the market value in the absence of trades.
+            """
         ),
         QA(
             id=147,
