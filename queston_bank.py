@@ -882,6 +882,10 @@ class QuestionBank:
             """,
             answer="1",
             answer_type="single",
+            comment_hint="""
+            In continuous trading, orders can be partially executed through multiple transactions until the entire order volume is fulfilled.
+            Therefore, the statement that each order is fully executed with one transaction is incorrect.
+            """,
         ),
         QA(
             id=65,
