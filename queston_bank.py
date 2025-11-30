@@ -1603,7 +1603,7 @@ class QuestionBank:
             answer=["2", "3"],
             answer_type="multiple",
             comment_hint="""
-            The Continuous Auction with Specialist model is designed for less liquid securities and has unique rules. \n\n
+            The Continuous Auction with Specialist model is designed for less liquid securities and has unique rules.
             A specialist's matching quote is a one-time trigger for price determination, 
             and the price is always set to maximize the volume of trades, not based on order entry time.
             """
