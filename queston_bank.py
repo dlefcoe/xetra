@@ -1913,9 +1913,8 @@ class QuestionBank:
             answer_type="single",
             comment_hint="""
             Choice 3 is incorrect because a PWT price determination (or price determination without turnover) 
-            is an automatic function of the exchange's trading system. 
-            
-            It occurs when no orders can be matched to form a trade, but a price can still be calculated based on the available bids and offers. 
+            is an automatic function of the exchange's trading system .  
+            It occurs when no orders can be matched to form a trade, but a price can still be calculated based on the available bids and offers .  
             This is an automated process, not an action manually initiated by a specialist.
             """
         ),
