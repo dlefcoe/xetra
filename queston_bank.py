@@ -729,6 +729,10 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="single",
+            comment_hint="""
+            The trader, by obtaining the necessary license and being assigned an Account D (Designated Sponsor), 
+            acts directly in this capacity within that specific market model.
+            """,
         ),
         QA(
             id=52,
