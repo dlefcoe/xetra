@@ -363,6 +363,9 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""
+            settlement is typically T+2 for most securities.
+            """,
         ),
         QA(
             id=27,
