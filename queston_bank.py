@@ -1533,6 +1533,13 @@ class QuestionBank:
             """,
             answer=["1", "2"],
             answer_type="multiple",
+            comment_hint="""
+            1. In the Continuous Auction with Specialist model, there is exactly one specialist per security who is responsible
+            2. for providing liquidity and maintaining an orderly market.
+            The specialist can enter orders in their own name and, if a corresponding order exists, also on behalf of other trading participants.
+            3. The Specialist model generally operates with limited transparency during the order accumulation (call) phases.
+            4. The specialist cannot identify the originator of an order, ensuring anonymity for market participants.
+            """
         ),
         QA(
             id=109,
