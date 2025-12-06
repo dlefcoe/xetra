@@ -1905,17 +1905,15 @@ class QuestionBank:
             choices="""
             1. In the case of securities that are traded in foreign currency and settled in euros, in addition to entering the matching quote (binding quote) for conversion, an exchange rate in line with the market must be entered.
             2. Ensure that at least one price is determined per trading day for each security.
-            3. If it is not possible to determine a price with turnover, a PWT price determination shall be initiated.
-            4. In order to restart trading after a suspension, a "Special Auction" shall be conducted.
-            5. During trading hours, continuously provide standard quotes (non-binding quotes) on the basis of the current order situation, taking into account any reference market.
+            3. In order to restart trading after a suspension, a "Special Auction" shall be conducted.
+            4. During trading hours, continuously provide standard quotes (non-binding quotes) on the basis of the current order situation, taking into account any reference market.
             """,
             answer="3",
             answer_type="single",
             comment_hint="""
-            Choice 3 is incorrect because a PWT price determination (or price determination without turnover) 
-            is an automatic function of the exchange's trading system .  
-            It occurs when no orders can be matched to form a trade, but a price can still be calculated based on the available bids and offers .  
-            This is an automated process, not an action manually initiated by a specialist.
+            To restart trading after a suspension, a "Special Auction" is not always required. 
+            The specialist may choose to resume trading through a standard auction process or other mechanisms as defined by exchange rules, 
+            depending on the circumstances of the suspension.
             """
         ),
         QA(
