@@ -621,6 +621,9 @@ class QuestionBank:
             """,
             answer="3",
             answer_type="single",
+            comment_hint="""
+            the Specialist's quote for trading funds must be based on multiple factors, such as the NAV.
+            """,
         ),
         QA(
             id=44,
