@@ -43,6 +43,10 @@ class QuestionBank:
             """,
             answer="4",
             answer_type="single",
+            comment_hint="""
+            The Exchange Council is responsible for overseeing the management board, adopting exchange rules, and appointing the head of the Trading Surveillance Office.
+            However, the admission of securities is typically handled by the Management Board of the Exchange, not the Exchange Council.
+            """,
         ),
         QA(
             id=2,
