@@ -1726,6 +1726,7 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="In the Continuous Auction with Specialist model, each security is assigned to exactly one specialist who is responsible for providing liquidity and maintaining an orderly market for that security.",
         ),
         QA(
             id=123,
