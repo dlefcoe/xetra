@@ -373,6 +373,11 @@ class QuestionBank:
             """,
             answer="1",
             answer_type="true_false",
+            comment_hint="""
+            In the context of exchange transactions, "T+2" refers to the settlement cycle where the settlement of a trade occurs two business days after the trade date (T).
+            Therefore, for shares traded on an exchange, the settlement typically occurs on the second performance day after the trade day.
+            T+1 will be introduced in October 2027.
+            """,
         ),
         QA(
             id=28,
