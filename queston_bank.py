@@ -929,6 +929,15 @@ class QuestionBank:
             """,
             answer=["2", "3"],
             answer_type="multiple",
+            comment_hint="""
+            Volume discovery orders are designed to reveal a portion of their total volume over time, similar to iceberg orders.
+            However, they have unique characteristics:
+            1. They build on the functionality of iceberg orders, meaning they have a visible peak and a hidden part.
+            2. The hidden part of a volume discovery order can be executed at the current midpoint against other hidden parts of volume discovery orders.
+            The other statements are incorrect:
+            1. The total volume of a volume discovery order is not executable against iceberg orders;
+            2. Volume discovery orders can be used in both continuous trading and auctions, not just in auctions.
+            """
         ),
         QA(
             id=68,
