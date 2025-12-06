@@ -291,6 +291,12 @@ class QuestionBank:
             """,
             answer=["2", "3", "4"],
             answer_type="multiple",
+            comment_hint="""
+            An indicative quote does not always have to be two-sided (bid and ask). 
+            Under specific circumstances (e.g., if the underlying asset is suspended, or due to severe market conditions), 
+            the Quote Provider may be temporarily exempt from quoting on one side 
+            (e.g., only providing a bid quote if they have suspended issuance).
+            """,
         ),
         QA(
             id=21,
