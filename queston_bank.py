@@ -806,6 +806,11 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="single",
+            comment_hint="""
+            OEOB transactions, also known as off-book trades or block trades that are reported to the exchange (On-Exchange), 
+            are designed to allow large institutional investors to execute significant volumes without immediately impacting the central limit order book (CLOB).
+            However, there are restrictions on the minimum order volume for these transactions to ensure they are used appropriately for large trades.
+            """,
         ),
         QA(
             id=58,
