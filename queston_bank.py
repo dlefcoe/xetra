@@ -1221,6 +1221,11 @@ class QuestionBank:
             """,
             answer=["1", "4"],
             answer_type="multiple",
+            comment_hint="""
+            Statement 1 is true for the ACE volatility interruption model, where several subsequently expanding price corridors can line up in the call phase.
+            Statement 4 is true for both models, as an extended volatility interruption will be terminated automatically once there is no longer an executable order book situation.
+            Statements 2 and 3 are not accurate descriptions of the volatility interruption models.
+            """
         ),
         QA(
             id=86,
