@@ -525,7 +525,7 @@ class QuestionBank:
             as well as the justification for why it should be considered a mistrade. 
             This includes the applicant's details, the transaction's specifics (time, volume, price), 
             and information demonstrating the price was not in line with the market.
-            --> The counterparty's details are not typically required in the application itself, since it would be annymous anyway
+            --> The counterparty's details are not typically required in the application itself, since it would be annymous anyway .
             """
 
         ),
