@@ -1770,6 +1770,10 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""
+            In the Continuous Auction with Specialist model, specialists can conduct Single Auctions for certain securities,
+            especially when there is a need to handle large orders or when market conditions warrant a separate auction process.
+            """,
         ),
         QA(
             id=127,
