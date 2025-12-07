@@ -1822,6 +1822,8 @@ class QuestionBank:
             After the suspension is lifted, only sell orders are generally permitted to allow investors to exit their positions. 
             The specialist plays a crucial role in managing the market for these securities during such events,
             often entering single-sided quotes to facilitate repurchasing.
+            --- The Specialist does not have the duty to report the knock-out or threshold breach event for a structured product because 
+            this reporting responsibility belongs to the **product issuer** .
             """,
         ),
         QA(
