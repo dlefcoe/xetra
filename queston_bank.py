@@ -2021,6 +2021,7 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="There are other methods that are used before the reference price is utilised.",
         ),
         QA(
             id=145,
