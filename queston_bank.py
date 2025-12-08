@@ -650,6 +650,11 @@ class QuestionBank:
             """,
             answer="1",
             answer_type="single",
+            comment_hint="""
+            If the issuer suspends the issue of fund units, it means that new units cannot be created or sold to investors.
+            In this situation, the specialist is exempted from the obligation to quote on the ask side,
+            as there are no new units available for sale.
+            """
         ),
         QA(
             id=46,
