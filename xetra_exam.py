@@ -10,6 +10,7 @@ from queston_bank import QuestionBank
 
 
 def run_quiz():
+    st.set_page_config(layout="wide")
     st.title("📘 Xetra Quiz")
 
     max_questions = len(QuestionBank.questions)
