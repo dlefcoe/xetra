@@ -1197,6 +1197,10 @@ class QuestionBank:
             """,
             answer="1",
             answer_type="true_false",
+            comment_hint="""
+            In both models, when a volatility interruption is triggered, trading transitions from continuous trading to a call phase.
+            This call phase allows the market to stabilize and provides an opportunity for price discovery before trading resumes.
+            """,
         ),
         QA(
             id=84,
