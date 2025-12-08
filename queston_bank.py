@@ -2025,6 +2025,9 @@ class QuestionBank:
             """,
             answer="2",
             answer_type="true_false",
+            comment_hint="""The auction price in the Continuous Auction with Specialist is determined based on both 
+            the specialist's quote and the order book situation at the end of the freeze phase.
+            """
         ),
         QA(
             id=144,
